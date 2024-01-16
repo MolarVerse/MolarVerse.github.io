@@ -1,0 +1,25 @@
+html {
+  background-color: #a6a29f;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7em;
+  font-family: "DejaVu Sans Mono", monospace;
+  text-align: center;
+  color: #403b36;
+}
+
+.navbar {
+  background-color: #403b36;
+  height: 120px;
+}
+
+.navbar-item {
+  img {
+    max-height: 120px;
+  }
+}
