@@ -2,13 +2,17 @@ html {
   background-color: #a6a29f;
 }
 
+body {
+  font-family: "URW Gothic", "Arial", sans-serif;
+}
+
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 7em;
-  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 6em;
+  font-family: "URW Gothic", "Arial", sans-serif;
   text-align: center;
   color: #403b36;
 }
@@ -22,4 +26,32 @@ html {
   img {
     max-height: 120px;
   }
+}
+
+.bottom-button {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.new-sentence {
+  margin-top: 150px;
+  font-size: medium;
+}
+
+.github-link {
+  color: #403b36;
+}
+
+.github-text {
+  color: #403b36;
+}
+.my-columns {
+  margin-top: 80px;
 }
