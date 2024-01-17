@@ -11,10 +11,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 6em;
-  font-family: "URW Gothic", "Arial", sans-serif;
+  font-size: 6em; /* Adjust size as needed */
   text-align: center;
   color: #403b36;
+  font-family: "URW Gothic", "Arial", sans-serif;
+  margin-top: 300px;
 }
 
 .navbar {
@@ -26,6 +27,9 @@ body {
   img {
     max-height: 120px;
   }
+}
+.navbar-item i {
+  margin-right: 10px;
 }
 
 .bottom-button {
@@ -41,7 +45,7 @@ body {
 }
 
 .new-sentence {
-  margin-top: 150px;
+  margin-bottom: 300px;
   font-size: medium;
 }
 
@@ -52,6 +56,11 @@ body {
 .github-text {
   color: #403b36;
 }
+
 .my-columns {
   margin-top: 80px;
+}
+
+.top-margin {
+  margin-top: 250px; /* Adjust the value as needed */
 }
