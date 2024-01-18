@@ -1,17 +1,29 @@
 ---
-layout: learnmore_layout
+layout: default
 title: Learn more page
 ---
 
-<body>
-    <div class="columns">
-        <div class="column has-text-centered">
-            <img src="/images/PimdQmcf.png" alt="PQ"></a>
-        </div>
-        <div class="column has-text-centered">
-            <img src="/images/VAnalysis.png" alt="VA"></a>
+<script>
+    window.onload = function () {
+        const learnMoreSection = document.getElementById('learn-more-section');
+        if (learnMoreSection) { // Check if the element exists
+            learnMoreSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
+<section id="learn-more-section">
+
+    <body>
+        <div class="columns">
+            <div class="column has-text-centered">
+                <img src="/images/PimdQmcf.png" alt="PQ"></a>
+            </div>
+            <div class="column has-text-centered">
+                <img src="/images/VAnalysis.png" alt="VA"></a>
+
+            </div>
 
         </div>
+    </body>
 
-    </div>
-</body>
+</section>
