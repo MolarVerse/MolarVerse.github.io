@@ -2,15 +2,15 @@
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="/index.html">
-        <img src="/images/MolarVerse_website.png" alt="MolarVerse"></a>
-      <a role="button" class="navbar-burger burger is-active" data-target="navbarMolarverse" aria-label="menu"
+        <img class="navbar-logo" src="/images/MolarVerse_website.png" alt="MolarVerse"></a>
+      <a role="button" class="navbar-burger burger" data-target="navbarMolarverse" aria-label="menu"
         aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-    <div id="navbarMolarverse" class="navbar-menu is-active">
+    <div id="navbarMolarverse" class="navbar-menu">
       <div class="navbar-end">
         <a class="navbar-item" href="/index.html">MolarVerse Home </a>
         <a class="navbar-item" href="https://github.com/MolarVerse" target="_blank">
@@ -25,3 +25,15 @@
           </div>
         </div>
 </nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.querySelector('.navbar-menu');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+</script>

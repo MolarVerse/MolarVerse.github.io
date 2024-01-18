@@ -28,8 +28,27 @@ body {
     max-height: 120px;
   }
 }
+
+.navbar-logo {
+  height: 100px;
+  width: auto; /* This will keep the aspect ratio of the logo */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-logo {
+    height: 2rem;
+  }
+}
+
 .navbar-item i {
   margin-right: 10px;
+}
+
+.navbar-burger {
+  color: #a6a29f;
+  position: relative;
+  /*top: 50%;
+  transform: translateY(-50%); /* Center the burger vertically */
 }
 
 .bottom-button {
@@ -63,4 +82,22 @@ body {
 
 .top-margin {
   margin-top: 250px; /* Adjust the value as needed */
+}
+
+.learnmore-logo {
+  width: 400px; /* Adjust as needed */
+  height: auto; /* This will keep the aspect ratio of the logo */
+}
+
+.small-logo {
+  width: 160px; /* Adjust as needed */
+  height: auto; /* This will keep the aspect ratio of the logo */
+  display: block;
+  margin: 10px auto; /* Add some space between the logos */
+}
+
+.small-logos {
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* Add some space between the logos */
 }
