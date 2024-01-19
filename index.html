@@ -51,19 +51,36 @@ title: Main Page
 
 
 <script>
+function scrollToLearnMore(event) {
+  event.preventDefault();
+  document.getElementById('learn-more-section').scrollIntoView({ behavior: 'smooth' });
+}
+
+
   window.onload = function () {
       const learnMoreSection = document.getElementById('welcome');
       if (learnMoreSection) { // Check if the element exists
           learnMoreSection.scrollIntoView({ behavior: 'smooth' });
       }
   }
-</script>
 
 
-<script>
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
+
+
+window.addEventListener('scroll', function() {
+  var learnMoreSection = document.getElementById('learn-more-section');
+  var rect = learnMoreSection.getBoundingClientRect();
+  var button = document.querySelector('.bottom-button');
+
+  if (rect.top <= 0) {
+    button.style.display = 'none';
+  } else {
+    button.style.display = 'block';
+  }
+});
 </script>
 
   </html>
