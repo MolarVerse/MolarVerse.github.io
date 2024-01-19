@@ -4,21 +4,42 @@ html {
 
 body {
   font-family: "URW Gothic", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  padding-top: 120px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
 }
 
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 6em; /* Adjust size as needed */
+  font-size: 6em;
   text-align: center;
   color: #403b36;
   font-family: "URW Gothic", "Arial", sans-serif;
-  margin-top: 200px;
+  margin-bottom: 5px;
+  margin-top: 1em;
+}
+
+.new-sentence {
+  font-size: medium;
+  font-family: "URW Gothic", "Arial", sans-serif;
+  color: #403b36;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #403b36;
   height: 120px;
 }
@@ -63,10 +84,6 @@ body {
   margin-right: 10px;
 }
 
-.new-sentence {
-  margin-top: 400px;
-  font-size: medium;
-}
 
 .github-link {
   color: #403b36;

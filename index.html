@@ -3,17 +3,63 @@ layout: default
 title: Main Page
 ---
 
+  <section class="section" id="welcome">
+    <div class="centered">Welcome&nbsp;to  <br> MolarVerse </div>
+    <div class="centered new-sentence">
+      Molecular Metaverse for In-Silico Chemistry and Material Science Solutions
+    </div>
+    <div class="is-vertical is-dark has-text-centered">
+      <a class="button is-outlined is-dark is-large bottom-button" href="#learn-more-section"
+        onclick="scrollToLearnMore(event)">
+        <span> Learn more </span>
+        <i class="fas fa-arrow-down arrow-icon"></i>
+      </a>
+    </div>
+  </section>
 
-<div class="centered">Welcome&nbsp;to MolarVerse </div>
-<div class="centered new-sentence ">
-  Molecular Metaverse for In-Silico Chemistry and Material Science Solutions
-</div>
-<div class="is-vertical is-dark has-text-centered">
-  <a class="button is-outlined is-dark is-large bottom-button" href="/pages/learnmore.html"
-    onclick="scrollToLearnMore(event)">
-    <span> Learn more </span>
-    <i class="fas fa-arrow-down arrow-icon"></i>
-  </a>
-</div>
 
-</html>
+  <section  class="section" id="learn-more-section">
+
+    <div class="columns">
+      <br>
+      <br>
+        <div class="column has-text-centered">
+          <br>
+            <p class="logo-text">Learn hjgfh hjgz hhjgfds bg kghjhktg hjg gfhtuzt gfvghrztr zutgz gfu6zt f serwse
+                ztrt iuzu t ftgzui uztg more ghfdfdshdgfghjg hjguzt zutgzhfvghr gthguzktg about our tools</p>
+            <img class="learnmore-logo" src="/images/PimdQmcf.png" alt="PQ"></a>
+            <div class="small-logos">
+                <img class="small-logo" src="/images/PQAnalysis.png" alt="Small Logo 1">
+                <img class="small-logo" src="/images/PQEnalyzer.png" alt="Small Logo 2">
+            </div>
+        </div>
+        <div class="column has-text-centered">
+          <br>
+            <p class="logo-text">Learn hjgfh hjgz hhjgfds bg kghjhktg hjg gfhtuzt gfvghrztr zutgz gfu6zt f serwse
+                ztrt iuzu t ftgzui uztg more ghfdfdshdgfghjg hjguzt zutgzhfvghr gthguzktg about our tools</p>
+            <img class="learnmore-logo" src="/images/VAnalysis.png" alt="VA"></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+  window.onload = function () {
+      const learnMoreSection = document.getElementById('welcome');
+      if (learnMoreSection) { // Check if the element exists
+          learnMoreSection.scrollIntoView({ behavior: 'smooth' });
+      }
+  }
+</script>
+
+
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+</script>
+
+  </html>
