@@ -102,8 +102,28 @@ body {
 }
 
 .learnmore-logo {
-  width: 400px; /* Adjust as needed */
+  width: 380px; /* Adjust as needed */
   height: auto; /* This will keep the aspect ratio of the logo */
+}
+
+.learnmore-logo2 {
+  width: 370px; /* Adjust as needed */
+  height: auto; /* This will keep the aspect ratio of the logo */
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo-text {
+  text-align: justify;
+  height: 250 px;
+overflow: auto;
+}
+
+.text-justified {
+  text-align: justify;
 }
 
 .small-logo {
