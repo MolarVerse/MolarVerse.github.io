@@ -11,7 +11,7 @@ body {
 }
 
 .section {
-  padding-top: 120px;
+  padding-top: 150px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -84,7 +84,6 @@ body {
   margin-right: 10px;
 }
 
-
 .github-link {
   color: #403b36;
 }
@@ -119,7 +118,7 @@ body {
 .logo-text {
   text-align: justify;
   height: 250 px;
-overflow: auto;
+  overflow: auto;
 }
 
 .text-justified {
@@ -137,4 +136,17 @@ overflow: auto;
   display: flex;
   justify-content: center;
   gap: 5px; /* Add some space between the logos */
+}
+
+.box {
+  background-color: #363636;
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+}
+
+.subtitle {
+  color: #fff;
 }
